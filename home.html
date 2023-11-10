@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com/v2.2.19/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-emerald-900 to-emerald-300 min-h-screen flex flex-col items-center justify-center ">
+    <div class=" mx-auto">
+        <h1 class="text-5xl font-bold text-center">Temperature Converter</h1>
+        <div class="w-56 h-16 rounded-full flex  justify-center mx-auto my-16">
+            <input type="number" id="temp-input" placeholder="Enter temperature" class="flex-grow rounded-l-full text-center text-2xl font-medium focus:outline-none focus:shadow-md">
+            <select id="temp-unit" class="w-16 h-16 text-center text-2xl font-medium rounded-r-full">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+        </div>
+        <button id="convert-btn" class="bg-blue-500 rounded-full px-8 py-4 mt-8 ml-40 text-white text-2xl px-8 font-bold hover:bg-blue-600 focus:outline-none">Convert</button>
+        <div id="output" class="ml-44 text-white text-3xl font-medium mt-8"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
